@@ -12,10 +12,10 @@
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "jsplumbtoolkit": "file:../../jsplumbtoolkit.tgz",
-    "jsplumbtoolkit-react": "file:../../jsplumbtoolkit-react.tgz",
-    "jsplumbtoolkit-syntax-highlighter": "file:../../jsplumbtoolkit-syntax-highlighter.tgz",
-    "jsplumbtoolkit-demo-support": "file:../../jsplumbtoolkit-demo-support.tgz"
+    "jsplumbtoolkit": "file:./jsplumbtoolkit.tgz",
+    "jsplumbtoolkit-react": "file:./jsplumbtoolkit-react.tgz",
+    "jsplumbtoolkit-syntax-highlighter": "file:./jsplumbtoolkit-syntax-highlighter.tgz",
+    "jsplumbtoolkit-demo-support": "file:./jsplumbtoolkit-demo-support.tgz"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
