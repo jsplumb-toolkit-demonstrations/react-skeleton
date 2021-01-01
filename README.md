@@ -11,8 +11,8 @@ This demonstration uses the "component based" approach. If you'd like to see the
 {
     "dependencies":{
         ...
-        "jsplumbtoolkit": "file:../../jsplumbtoolkit.tgz",
-        "jsplumbtoolkit-react": "file:../../jsplumbtoolkit-react.tgz",
+        "jsplumbtoolkit": "file:./jsplumbtoolkit.tgz",
+        "jsplumbtoolkit-react": "file:./jsplumbtoolkit-react.tgz",
         ...
     }
 }
