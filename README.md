@@ -18,6 +18,14 @@ This demonstration uses the "component based" approach. If you'd like to see the
 }
 ```
 
+### Building/running the demonstration
+
+- Copy the `jsplumbtoolkit` archives shown above into the project root, either from your licensed bundle or your evaluation bundle.
+- `npm i`
+- `npm run start`
+
+The app will come up on port 8080 (unless it's in use, in which case consecutive port numbers will be tried until an open port is found).
+
 ### Setup/Initialization
 
 The app consists of a `DemoComponent` which creates a Toolkit instance, and then renders a `JsPlumbToolkitSurfaceCompoment`. In this application we wrap our bootstrap in a `jsPlumbToolkit.ready(..)` function; we don't expect that real world apps will bootstrap themselves in this way.
