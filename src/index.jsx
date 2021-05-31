@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { StraightConnector, BlankEndpoint } from "@jsplumb/core";
+import { StraightConnector, BlankEndpoint, LabelOverlay, ArrowOverlay } from "@jsplumb/core";
 import { JsPlumbToolkitSurfaceComponent }  from '@jsplumbtoolkit/react';
 import { ready, newInstance } from '@jsplumbtoolkit/browser-ui';
+import { SpringLayout} from "@jsplumbtoolkit/layout-spring";
 
 import { ShinBoneComponent } from './shin-bone-component.jsx';
 import { KneeBoneComponent } from './knee-bone-component.jsx';
