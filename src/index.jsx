@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { JsPlumbToolkitSurfaceComponent }  from 'jsplumbtoolkit-react';
-import { jsPlumbToolkit } from 'jsplumbtoolkit';
+import { StraightConnector, BlankEndpoint } from "@jsplumb/core";
+import { JsPlumbToolkitSurfaceComponent }  from '@jsplumbtoolkit/react';
+import { ready, newInstance } from '@jsplumbtoolkit/browser-ui';
 
 import { ShinBoneComponent } from './shin-bone-component.jsx';
 import { KneeBoneComponent } from './knee-bone-component.jsx';
@@ -12,14 +13,14 @@ const randomColor = () => {
     return colors[Math.floor(Math.random() * colors.length)];
 }
 
-jsPlumbToolkit.ready(() => {
+ready(() => {
 
     class DemoComponent extends React.Component {
 
 
         constructor(props) {
             super(props);
-            this.toolkit = jsPlumbToolkit.newInstance();
+            this.toolkit = newInstance();
             this.state = { color:randomColor() };
 
             this.view = {
@@ -33,21 +34,21 @@ jsPlumbToolkit.ready(() => {
                 },
                 edges:{
                     "default":{
-                        connector:"Straight",
-                        anchor:"Continuous",
+                        connector:StraightConnector.type,
+                        anchor:'Continuous',
                         overlays:[
-                            [ "Label", { location:0.5, label:"${label}"}],
-                            [ "Arrow", { location:1} ],
-                            [ "Arrow", {location:0, direction:-1}]
+                            { type: LabelOverlay.type ,options: { location:0.5, label:"${label}"}},
+                            { type: ArrowOverlay.type, options:{ location:1} },
+                            { type: ArrowOverlay.type, options:{location:0, direction:-1}}
                         ],
-                        endpoint:"Blank"
+                        endpoint:BlankEndpoint.type
                     }
                 }
             };
 
             this.renderParams = {
                 layout:{
-                    type:"Spring"
+                    type:SpringLayout.type
                 },
                 zoomToFit:true,
                 consumeRightClick:false
