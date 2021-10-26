@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { JsPlumbToolkitSurfaceComponent }  from '@jsplumbtoolkit/react';
 import { StraightConnector, BlankEndpoint, LabelOverlay, ArrowOverlay} from '@jsplumbtoolkit/browser-ui';
-import { newInstance } from '@jsplumbtoolkit/browser-ui-react';
+import { JsPlumbToolkitSurfaceComponent, newInstance } from '@jsplumbtoolkit/browser-ui-react';
 import { SpringLayout} from "@jsplumbtoolkit/layout-spring";
 
 import { ShinBoneComponent } from './shin-bone-component.jsx';
