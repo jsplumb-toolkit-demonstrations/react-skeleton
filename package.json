@@ -12,8 +12,8 @@
   "dependencies": {
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "@jsplumbtoolkit/browser-ui-react": "^5.0.0-RC17",
-    "@jsplumbtoolkit/layout-spring": "^5.0.0-RC17"
+    "@jsplumbtoolkit/browser-ui-react": "^5.0.0",
+    "@jsplumbtoolkit/layout-spring": "^5.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.22.1",
