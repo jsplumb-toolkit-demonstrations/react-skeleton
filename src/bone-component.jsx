@@ -1,5 +1,5 @@
 import React from 'react';
-import { BaseNodeComponent } from "jsplumbtoolkit-react";
+import { BaseNodeComponent } from "@jsplumbtoolkit/browser-ui-react";
 
 export class BoneComponent extends BaseNodeComponent {
 
