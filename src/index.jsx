@@ -1,9 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { StraightConnector, BlankEndpoint, LabelOverlay, ArrowOverlay} from '@jsplumbtoolkit/browser-ui';
 import { JsPlumbToolkitSurfaceComponent, newInstance } from '@jsplumbtoolkit/browser-ui-react';
-import { ForceDirectedLayout } from "@jsplumbtoolkit/layout-force-directed";
+import {
+    ForceDirectedLayout,
+    StraightConnector,
+    BlankEndpoint,
+    LabelOverlay,
+    ArrowOverlay
+} from '@jsplumbtoolkit/browser-ui';
 
 import { ShinBoneComponent } from './shin-bone-component.jsx';
 import { KneeBoneComponent } from './knee-bone-component.jsx';
